@@ -1,0 +1,35 @@
+logging:
+  level: INFO
+  loggers:
+    com.tasks: DEBUG
+    org.hibernate.SQL:
+      level: DEBUG
+
+server:
+      rootPath: /api/*
+
+database:
+  properties:
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+      hibernate.hbm2ddl.auto: create-drop
+
+  driverClass: org.h2.Driver
+  user: sa
+  password: sa
+
+  url: jdbc:h2:file:./target/tasks
+
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+
+    # Sets the level for 'com.example.app' to DEBUG.
+    com.example.app: DEBUG
+
+
