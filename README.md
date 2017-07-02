@@ -25,31 +25,31 @@ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET
 
 - Get a User by id at: /api/user/{userId} GET
 ```
-curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://hostname/api/user/{id}
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://http://localhost:8080/api/user/{id}
 ```
 
 - Create a Task at: /api/user/{userId}/task POST
 ```
-curl -i -H "Content-Type: application/json" -X POST -d '{"name":"My task","description" : "Description of task", "date_time" : "2016-05-25 14:25:00"}' http://hostname/api/user/{user_id}/task
+curl -i -H "Content-Type: application/json" -X POST -d '{"name":"My task","description" : "Description of task", "date_time" : "2016-05-25 14:25:00"}' http://http://localhost:8080/api/user/{user_id}/task
 ```
 
 - Update a Task at: /api/user/task/{taskId} PUT
 ```
-curl -i -H "Content-Type: application/json" -X PUT -d '{"name":"My updated task"}' http://hostname/api/user/task/{task_id}
+curl -i -H "Content-Type: application/json" -X PUT -d '{"name":"My updated task"}' http://http://localhost:8080/api/user/task/{task_id}
 ```
 
 - Delete a Task at: /api/user/task/{taskId} DELETE
 ```
-curl -i -H "Content-Type: application/json" -X DELETE http://hostname/api/user/task/{task_id}
+curl -i -H "Content-Type: application/json" -X DELETE http://http://localhost:8080/api/user/task/{task_id}
 ```
 
 - Get Task information at by Task and User: /api/user/{userId}/task/{taskId} GET
 ```
-curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://hostname/api/user/{user_id}/task/{task_id}
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://http://localhost:8080/api/user/{user_id}/task/{task_id}
 ```
 
 - Get All Task information by User: /api/user/{userId}/task/ GET
 ```
-curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://hostname/api/user/{user_id}/task/{task_id}
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://http://localhost:8080/api/user/{user_id}/task/
 ```
 
