@@ -32,7 +32,7 @@ public class TasksRepository extends AbstractDAO<Task> {
     }
 
     public void deleteTaskById(long taskId) {
-        currentSession().delete(getTaskById(taskId));
+        currentSession().delete(getTaskById(taskId).get());
     }
 
     public Optional<Task> getTaskById(long taskId) {

@@ -92,6 +92,7 @@ public class CoreUserResource {
     @Path("/task/{taskId}")
     @UnitOfWork
     public Task updateTask(@PathParam("taskId") long taskId, TaskModel taskModel) {
+        taskModel.setId(taskId);
         return tasksRepository.updateTask(taskModel);
     }
 
