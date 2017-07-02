@@ -7,6 +7,11 @@ How to start the ServiceTasks application
 1. Start application with `java -jar target/ServiceTasks-0.0.2.jar server config.yml`
 1. To check that your application is running enter url `http://localhost:8080`
 
+Requirements
+---
+* Java 8
+* Maven
+
 The following endpoints are available for domains User and Task
 ---
 - Create a User at: /api/user POST
@@ -52,4 +57,10 @@ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET
 ```
 curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://http://localhost:8080/api/user/{user_id}/task/
 ```
+
+## Built With
+
+*  Java 8
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
 
